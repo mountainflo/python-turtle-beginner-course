@@ -8,13 +8,13 @@ tina.shape("turtle")
 tina.speed("fastest")
 
 
-def triangle(sizeOfTheTriangle):
+def triangle(size):
     tina.left(60)
-    tina.forward(sizeOfTheTriangle)
+    tina.forward(size)
     tina.left(120)
-    tina.forward(sizeOfTheTriangle)
+    tina.forward(size)
     tina.left(120)
-    tina.forward(sizeOfTheTriangle)
+    tina.forward(size)
     tina.left(60)
 
 

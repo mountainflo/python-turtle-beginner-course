@@ -8,17 +8,17 @@ tina.shape("turtle")
 tina.speed("fastest")
 
 
-def triangle(sizeOfTheTriangle):
+def triangle(size):
     tina.left(60)
-    tina.forward(sizeOfTheTriangle)
+    tina.forward(size)
     tina.left(120)
-    tina.forward(sizeOfTheTriangle)
+    tina.forward(size)
     tina.left(120)
-    tina.forward(sizeOfTheTriangle)
+    tina.forward(size)
     tina.left(60)
 
 
-def drawSixTriangles(size):
+def draw_six_triangles(size):
     triangle(size)
     tina.right(60)
     triangle(size)
@@ -32,9 +32,9 @@ def drawSixTriangles(size):
     triangle(size)
 
 
-drawSixTriangles(25)
-drawSixTriangles(50)
-drawSixTriangles(100)
-drawSixTriangles(150)
+draw_six_triangles(25)
+draw_six_triangles(50)
+draw_six_triangles(100)
+draw_six_triangles(150)
 
 window.exitonclick()

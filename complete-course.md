@@ -113,8 +113,8 @@ In Variablen können Zahlen und Texte gespeichert werden. Zahlen können einfach
 so geschrieben werden. Texte müssen aber immer zwischen Anführungszeichen stehen.
 
 ```python
-squareSize = 10 # in der Variable wird die Zahl 10 gespeichert
-squareColor = "blue" # in der Variable wird der Text "blue" gespeichert
+square_size = 10 # in der Variable wird die Zahl 10 gespeichert
+square_color = "blue" # in der Variable wird der Text "blue" gespeichert
 ```
 
 ### >>> Aufgabe: Variablen verwenden
@@ -206,15 +206,15 @@ zweite Element mit  ```colors[1]```.
 
 Um zu wissen, wie viele Elemente in einer Liste sind, bzw. wie lang eine Liste ist, 
 könnt ihr ```len()``` verwenden. Im nachfolgenden Beispiel 
-wird in der Variable ```amountOfElementsInTheList``` die Länge 
+wird in der Variable ```colors_size``` die Länge 
 der Liste ```colors```, hier 4, gespeichert. Anschließend wird die ```for```-Schleife 
 4 mal durchlaufen. Bei jedem Durchlauf wird eine andere Farbe aus der Liste ausgewählt.
 
 ```python
 # Quadrat, bei dem jede Seite eine andere Farbe hat
 colors = ['red', 'purple', 'blue', 'green']
-amountOfElementsInTheList = len(colors) # len(colors) => 4
-for i in range(amountOfElementsInTheList): 
+colors_size = len(colors) # len(colors) => 4
+for i in range(colors_size): 
     tina.color(colors[i]) 
     tina.forward(100) 
     tina.left(90) 
@@ -273,10 +273,10 @@ Seiten gleich lang und alle Winkel 60° groß.
 
 ### >>> Aufgabe: Spinnennetz
 
-Schreibe eine Funktion ```drawSixTriangles(size)```, die sechs mal ```triangles(size)``` aufruft. 
+Schreibe eine Funktion ```draw_six_triangles(size)```, die sechs mal ```triangles(size)``` aufruft. 
 Nach jedem gezeichneten Dreieck dreht sich die Schildkröte um 60°.
 
-Wenn du nun ```drawSixTriangles(size)``` nacheinander mit verschiedenen Werten aufrufst, 
+Wenn du nun ```draw_six_triangles(size)``` nacheinander mit verschiedenen Werten aufrufst, 
 z.B. mit 25, 50, 100 und 150 erhälst du einen Spinnennetz.
 
 *TIPP: Du kannst die Schildkröte mit ```tina.speed("fastest")``` auch schneller laufen lassen.*
@@ -299,13 +299,13 @@ nun die notwendigen Funktionen und setzen Schritt für Schritt das Spiel zusamme
 
 ### >>> Aufgabe 1: Skala am oberen Spielfeldrand
 
-Schreibe eine Funktion ```drawScala(size)```, die in einer ```for```-Schleife die Zahlen 
+Schreibe eine Funktion ```draw_scala(size)```, die in einer ```for```-Schleife die Zahlen 
 von 0 bis 20 schreibt. Zwischen jeder Zahl ist ein Abstand von 20.
 
 Für das Schreiben von Texten kannst du ```tina.write(text, align="center")``` verwenden. 
 Ersetze ```text``` durch die von dir verwendete Zählervariable in der ```for```-Schleife.
 
-Setze die Schildkröte vor dem Aufruf der Funktion ```drawScala(20)``` auf die 
+Setze die Schildkröte vor dem Aufruf der Funktion ```draw_scala(20)``` auf die 
 Position x=-200 und y=200. Nach dem die Skala gezeichnet wurde, setzt du die 
 Schildkröte wieder auf x=0 und y=0.
 
@@ -345,7 +345,7 @@ und schaue welche Schildkröte am Ende vorne liegt.
 
 ### >>> Aufgabe 4: Horizontale Linien zeichnen
 
-Schreibe eine Funktion ```drawHorizontalLines()```, die horizontale Linien zeichnet. 
+Schreibe eine Funktion ```draw_horizontal_lines()```, die horizontale Linien zeichnet. 
 Die horizontalen Linien werden bei x=-200 und y=190 direkt unter die Zahlenskala 
 aus Aufgabe 1 gezeichnet. Die Höhe einer Linie beträgt 190.
 
@@ -372,9 +372,9 @@ und "Kleiner gleich" ```<=``` aus.
 a = 5
 b = 9
 
-if( a > b ):
+if a > b :
   print("a ist größer als b")
-if( a < b ):
+if a < b :
   print("a ist kleiner als b")  
 ```
 
@@ -382,7 +382,7 @@ if( a < b ):
 
 Wir möchten nun den Namen der Schildkröte ausgeben, die als erstes die Ziellinie erreicht. 
 Dazu erweitern wir die ```for```-Schleife aus Aufgabe 3 und packen diese 
-in die Funktion ```startRace()```.
+in die Funktion ```start_race()```.
 
 Nachdem sich eine Schildkröte fortbewegt hat, überprüfen wir jedes Mal, 
 ob die Schildkröte bereits die Ziellinie erreicht hat. 
@@ -396,10 +396,10 @@ Gewinner-Schildkröte aus.
 
 Füge die gerade eben erstellte ```if```-Abfrage nach jedem ```forward()``` von 
 den 3 Schildkröten ein. Damit die Schildkröten nicht weiterlaufen, müssen wir 
-die ```startRace```-Funktion verlassen. Füge hierzu noch jeweils an das Ende der 
+die ```start_race```-Funktion verlassen. Füge hierzu noch jeweils an das Ende der 
 drei ```if```-Anweisungen ein ```return```.
 
-Nun fehlt nur noch der Aufruf der Funktion ```startRace()```. 
+Nun fehlt nur noch der Aufruf der Funktion ```start_race()```. 
 
 ### Erweiterungen für das Spiel
 

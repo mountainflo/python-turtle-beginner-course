@@ -1,6 +1,6 @@
 ### >>> Aufgabe 4: Horizontale Linien zeichnen
 
-Schreibe eine Funktion ```drawHorizontalLines()```, die horizontale Linien zeichnet. 
+Schreibe eine Funktion ```draw_horizontal_lines()```, die horizontale Linien zeichnet. 
 Die horizontalen Linien werden bei x=-200 und y=190 direkt unter die Zahlenskala 
 aus Aufgabe 1 gezeichnet. Die Höhe einer Linie beträgt 190.
 

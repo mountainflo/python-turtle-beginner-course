@@ -13,7 +13,7 @@ tina.speed("fastest")
 # Aufgabe 1: Skala am oberen Spielfeldrand
 
 
-def drawScala(size):
+def draw_scala(size):
     for step in range(size):
         tina.write(step, align="center")
         tina.forward(20)
@@ -23,8 +23,8 @@ tina.penup()
 tina.goto(-200, 200)
 tina.pendown()
 
-sizeOfTheRaceTrack = 21
-drawScala(sizeOfTheRaceTrack)
+race_track_size = 21
+draw_scala(race_track_size)
 
 tina.penup()
 tina.goto(0, 0)
@@ -34,7 +34,7 @@ tina.pendown()
 ##################################
 # Aufgabe 4: Horizontale Linien
 
-def drawHorizontalLines(count, size):
+def draw_horizontal_lines(count, size):
     for step in range(count):
         tina.right(90)
         tina.forward(size)
@@ -53,7 +53,7 @@ tina.penup()
 tina.goto(-200, 190)
 tina.pendown()
 
-drawHorizontalLines(sizeOfTheRaceTrack, 190)
+draw_horizontal_lines(race_track_size, 190)
 
 tina.penup()
 tina.goto(0, 0)
@@ -63,7 +63,7 @@ tina.pendown()
 ##################################
 # Erweiterung: Karierte Ziellinie
 
-def drawFinishLine(height):
+def draw_finish_line(height):
     for i in range(int(height / 10)):
         if i % 2 == 0:
             tina.begin_fill()
@@ -84,7 +84,7 @@ tina.penup()
 tina.goto(200, 190)
 tina.pendown()
 
-drawFinishLine(190)
+draw_finish_line(190)
 
 tina.penup()
 tina.goto(0, 0)
@@ -117,38 +117,38 @@ fritz.pendown()
 ##################################
 # Aufgabe 5: Gewinner Schildkroete
 
-turtleNames = ["Ada", "Hans", "Fritz"]
+turtle_names = ["Ada", "Hans", "Fritz"]
 
 
-def startRace():
-    finishLineXCor = 190
+def start_race():
+    finish_line_x_cor = 190
 
     for move in range(200):
         ada.forward(randint(1, 5))
-        if (ada.xcor() > finishLineXCor):
+        if ada.xcor() > finish_line_x_cor:
             return 0
 
         hans.forward(randint(1, 5))
-        if (hans.xcor() > finishLineXCor):
+        if hans.xcor() > finish_line_x_cor:
             return 1
 
         fritz.forward(randint(1, 5))
-        if (fritz.xcor() > finishLineXCor):
+        if fritz.xcor() > finish_line_x_cor:
             return 2
 
 
 print("Welche Schildkröte gewinnt: blau Ada(0), grün Hans(1), schwarz Fritz(2)?")
-betPlayer1 = int(input("Wette von Spieler 1:"))
-betPlayer2 = int(input("Wette von Spieler 2:"))
+bet_player_1 = int(input("Wette von Spieler 1:"))
+bet_player_2 = int(input("Wette von Spieler 2:"))
 
-winnerTurtle = startRace()
-print("Schildkröte " + turtleNames[winnerTurtle] + " hat gewonnen!")
+winner_turtle = start_race()
+print("Schildkröte " + turtle_names[winner_turtle] + " hat gewonnen!")
 
-if betPlayer2 == betPlayer1 and winnerTurtle == betPlayer2:
+if bet_player_2 == bet_player_1 and winner_turtle == bet_player_2:
     print("Beide Spieler haben gewonnen!")
-elif winnerTurtle == betPlayer1:
+elif winner_turtle == bet_player_1:
     print("Spieler 1 hat das Spiel gewonnen!")
-elif winnerTurtle == betPlayer2:
+elif winner_turtle == bet_player_2:
     print("Spieler 2 hat das Spiel gewonnen!")
 else:
     print("Keine der Wetten war richtig. Beide Spieler haben verloren.")

@@ -13,9 +13,9 @@ und "Kleiner gleich" ```<=``` aus.
 a = 5
 b = 9
 
-if( a > b ):
+if a > b :
   print("a ist größer als b")
-if( a < b ):
+if a < b :
   print("a ist kleiner als b")  
 ```
 
@@ -23,7 +23,7 @@ if( a < b ):
 
 Wir möchten nun den Namen der Schildkröte ausgeben, die als erstes die Ziellinie erreicht. 
 Dazu erweitern wir die ```for```-Schleife aus Aufgabe 3 und packen diese 
-in die Funktion ```startRace()```.
+in die Funktion ```start_race()```.
 
 Nachdem sich eine Schildkröte fortbewegt hat, überprüfen wir jedes Mal, 
 ob die Schildkröte bereits die Ziellinie erreicht hat. 
@@ -37,7 +37,7 @@ Gewinner-Schildkröte aus.
 
 Füge die gerade eben erstellte ```if```-Abfrage nach jedem ```forward()``` von 
 den 3 Schildkröten ein. Damit die Schildkröten nicht weiterlaufen, müssen wir 
-die ```startRace```-Funktion verlassen. Füge hierzu noch jeweils an das Ende der 
+die ```start_race```-Funktion verlassen. Füge hierzu noch jeweils an das Ende der 
 drei ```if```-Anweisungen ein ```return```.
 
-Nun fehlt nur noch der Aufruf der Funktion ```startRace()```. 
+Nun fehlt nur noch der Aufruf der Funktion ```start_race()```. 
