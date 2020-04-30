@@ -12,3 +12,5 @@ The course includes the following content:
 * Python lists
 * Python functions
 * Coding the Turtle Race
+
+![Course Overview](images/course_overview.png)

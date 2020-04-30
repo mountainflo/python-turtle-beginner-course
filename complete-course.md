@@ -38,7 +38,7 @@ tina.color("green") # black, red, green, yellow, pink ...
 
 *TIPP: Du kannst deinen Code mit Kommentaren und Anmerkungen ergänzen. 
 Python ignoriert diese Kommentare und führt den auskommentierten Code 
-nicht aus. Mit ```# ``` kannst du eine Zeile auskommentieren. 
+nicht aus. Mit ```#``` kannst du eine Zeile auskommentieren. 
 Alles was nach dem ```#```-Zeichen folgt wird von Python ignoriert.*
 
 ## 2. Schildkröte bewegen
@@ -183,6 +183,8 @@ Male eine Schneeflocke. Überlege dir, wie die Schneeflocke aufgebaut ist.
 Zeichne einen Teil der Schneeflocke und lass diesen Teil mit der Schleife 
 weitere 6 mal zeichnen. Nutze Variablen, mit den du rechnen kannst. 
 Als Winkel kannst du 60 Grad verwenden.
+
+![Snowflake Description](images/snowflake.png)
 
 ### >>> Aufgabe: Drehende Formen
 
@@ -405,7 +407,7 @@ Nun fehlt nur noch der Aufruf der Funktion ```start_race()```.
 
 * Zur Ausgabe der Schildkrötennamen eine Liste verwenden
 * karierte Ziellinie malen. Verwende dazu Quadrate, die du abwechselnd füllst, 
-bzw. nicht füllst (```begin_fill```, ```end_fill``` und ```if(i%2 == 0)```)
+bzw. nicht füllst (```begin_fill```, ```end_fill``` und ```if i % 2 == 0```)
 * Wetten auf Schildkröten abschließen (```input()```, ```and```, ```or```)
 * Platzierung aller Schildkröten anzeigen (1. Platz, 2. Platz, ...)
 * Countdown anzeigen, bevor das Rennen startet (3, 2, 1, START)
