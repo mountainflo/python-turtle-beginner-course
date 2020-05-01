@@ -137,12 +137,12 @@ def start_race():
             return 2
 
 
-print("Welche Schildkröte gewinnt: blau Ada(0), grün Hans(1), schwarz Fritz(2)?")
+print("Welche Schildkroete gewinnt: blau Ada(0), gruen Hans(1), schwarz Fritz(2)?")
 bet_player_1 = int(input("Wette von Spieler 1:"))
 bet_player_2 = int(input("Wette von Spieler 2:"))
 
 winner_turtle = start_race()
-print("Schildkröte " + turtle_names[winner_turtle] + " hat gewonnen!")
+print("Schildkroete " + turtle_names[winner_turtle] + " hat gewonnen!")
 
 if bet_player_2 == bet_player_1 and winner_turtle == bet_player_2:
     print("Beide Spieler haben gewonnen!")
